@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    </head>
+    <body style="background-color: lightgray">
+        <div class="jumbotron" style="background-color: white; margin-bottom: -10px;">
+            <img src="img/logo.png" alt="Kelly Services Logo" height="90px;" style="float: left;">
+            <center><h2>Requisicion de personal</h2></center>
+        </div>
+        <div class="container-fluid" style="background-color: lightgray">
+            <div class="row">
+                <div class="col-sm-12" style="height: 32px; background-color: #008349;"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10" style="background-color: white">
+                    
+                    <form class="form-horizontal" action="Enviar.html" name="solicitud" method="POST">
+                        <div class="form-group">
+                            <div class="col-sm-11">
+                                <h2 style="text-align: right">Folio: 0000001</h2>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="cliente">Cliente: </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="cliente" value="">
+                            </div>
+                            <label class="control-label col-sm-2" for="giro">Giro de la Empresa:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="giro" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="razon">Razon Social: </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="razon" value="">
+                            </div>
+                            <label class="control-label col-sm-2" for="nombre_contacto">Nombre del Contacto:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="nombre_contacto" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="nombre_comercial">Nombre Comercial: </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="nombre_comercial" value="">
+                            </div>
+                            <label class="control-label col-sm-2" for="puesto_contacto">Puesto del Contacto:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="puesto_contacto" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="responsable">Responsable de la Vacante: </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="responsable" value="">
+                            </div>
+                            <label class="control-label col-sm-2" for="telefono_contacto">Telefono de Contacto:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="telefono_contacto" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="cliente">Cliente: </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="cliente" value="">
+                            </div>
+                            <label class="control-label col-sm-2" for="giro">Giro de la empresa:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="giro" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-5"></div>
+                            <label class="control-label col-sm-2" for="email">Correo Electronico:</label>
+                            <div class="col-sm-3">
+                                <input type="email" class="form-control" name="email" value="">
+                            </div>
+                        </div>
+                        <br><hr><br>
+                        <center><h2>Detalle de la Vacante</h2></center>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="num_vacantes">Numero de Vacantes:</label>
+                            <div class="col-sm-1">
+                                <input type="text" class="form-control" name="num_vacantes" value="0">
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="area">Area:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="area" value="Kelly OCG -BPO">
+                            </div>
+                            <label class="control-label col-sm-1" for="departamento">Departamento:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="departamento" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="sueldo">Sueldo:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="sueldo" value="$">
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="prestaciones">Prestaciones:</label>
+                            <div class="col-sm-4">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <label class="control-label col-sm-1" for="reporta">Reporta a:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" name="sueldo" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="cargo_personal">Tiene personal a su cargo:</label>
+                            <div class="col-sm-1">
+                                <input type="text" class="form-control" name="cargo_personal" value="">
+                            </div>
+                            <label class="control-label col-sm-1" for="cantidad_personal">Cuantas personas:</label>
+                            <div class="col-sm-1">
+                                <input type="text" class="form-control" name="cantidad_personal" value="">
+                            </div>
+                            <label class="control-label col-sm-2" for="tipo_personal">Tipo de personal a su cargo:</label>
+                            <div class="col-sm-3">
+                                <textarea class="form-control" rows="4" name="tipo_personal"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="tipo_vacante">Tipo de vacante:</label>
+                            <div class="col-sm-2">
+                                <div class="radio">
+                                    <input type="radio" name="tipo_vacante" value="baja">Remplazo por baja<br><br>
+                                    <input type="radio" name="tipo_vacante" value="promocion">Remplazo por promocion<br><br>
+                                    <input type="radio" name="tipo_vacante" value="incapacidad">Remplazo por incapacidad<br><br>
+                                    <input type="radio" name="tipo_vacante" value="traspaso">Traspaso al cliente<br><br>
+                                    <input type="radio" name="tipo_vacante" value="nueva">Nueva creacion<br>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <br><br><br>
+                                <p>Tiempo de incapacidad y tiempo estimado</p>
+                                <input type="text" class="form-control" name="tiempo_incapacidad" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="tipo_contrato">Tipo de contrato:</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option value="temporal">Temporal</option>
+                                    <option value="permanente">Permanente</option>
+                                </select>
+                            </div>
+                            <label class="control-label col-sm-2" for="horario">Horario de trabajo:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="horario" value="">
+                            </div>
+                        </div>
+                        <br><hr><br>
+                        <center><h2>Perfil del Puesto</h2></center>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="edad1">Edad de:</label>
+                            <div class="col-sm-1">
+                                <input type="text" class="form-control" name="edad1" value="">
+                            </div>
+                            <label class="control-label col-sm-1" for="edad2">a</label>
+                            <div class="col-sm-1">
+                                <input type="text" class="form-control" name="edad2" value="">
+                            </div>
+                            <label class="control-label col-sm-1" for="estado_civil">Estado Civil:</label>
+                            <div class="col-sm-2">
+                                <select class="form-control">
+                                    <option value="soltero">Soltero</option>
+                                    <option value="casado">Casado</option>
+                                    <option value="indistinto">Indistinto</option>
+                                </select>
+                            </div>
+                            <label class="control-label col-sm-1" for="sexo">Sexo:</label>
+                            <div class="col-sm-1">
+                                <select class="form-control">
+                                    <option value="masculino">Masculino</option>
+                                    <option value="casado">Femenino</option>
+                                    <option value="indistinto2">Indistinto</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="experiencia">Experiencia:</label>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="No necesaria">No Necesaria
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="6 a 12 meses">6 a 12 meses
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="1 a 3 años">1 a 3 años
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="3 a 5 años">3 a 5 años
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="Mas de 5 años">5 años
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-7">
+                                <strong>A. Aprendiz: </strong>Sin experiencia previa y/o enfocado a la ejecución de tareas repetitivas. <br>
+                                <strong>B. Especialista: </strong>Conocimientos de mediana complejidad desempeñados con dirección independiente. <br>
+                                <strong>C. Experto: </strong>Extensos conocimientos complejos principalmente en alta gerencia, es entrenador de especialistas y aprendices. <br>
+                                <strong>D. Autoridad: </strong>Máxima capacidad, conocimiento y talento en un campo amplio de talento. Es responsable de dirigir expertos. 
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="aprendiz" value="Aprendiz"><br>
+                                    <input type="radio" name="aprendiz" value="Especialista"><br>
+                                    <input type="radio" name="aprendiz" value="Experto"><br>
+                                    <input type="radio" name="aprendiz" value="Autoridad">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="escolaridad">Escolaridad:</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control" name="escolaridad" value="">
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="No necesaria">Titulado
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="6 a 12 meses">Pasante
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="1 a 3 años">Trunco
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="experiencia" value="3 a 5 años">Tecnico
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4">
+                                <center><label for="actividades_diarias">Actividades Diarias</label></center>
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4">
+                                <center><label for="actividades_eventuales">Actividades Eventuales</label></center>
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4">
+                                <center><label for="competencias">Competencias</label></center>
+                                <textarea class="form-control" rows="5"></textarea>
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-4">
+                                <center><label for="conocimientos">Conocimientos especificos de preferencia</label></center>
+                                <center><label for="conocimientos">(Software, tecnologia, etc)</label></center>
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3" for="idiomas">Idiomas:</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" name="ingles" value="Ingles"><br>
+                                <input type="text" class="form-control" name="espanol" value="Español">
+                            </div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="ingles" value="Basico">Basico<br><br><br>
+                                    <input type="radio" name="espanol" value="Basico">Basico
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="ingles" value="Intermedio">Intermedio<br><br><br>
+                                    <input type="radio" name="espanol" value="Intermedio">Intermedio
+                                </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <div class="radio">
+                                    <input type="radio" name="ingles" value="Fluido">Fluido<br><br><br>
+                                    <input type="radio" name="espanol" value="Fluido">Fluido
+                                </div>
+                            </div>
+                        </div>
+                        <br><hr><br>
+                        <center><h4>Requerimientos especificos</h4></center>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="viajar">Disponibilidad para viajar:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="viajar" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="residencia">Disponibilidad para cambio de residencia:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="residencia" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="horarios">Disponibilidad de horarios:</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="horarios" value="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="control-label col-sm-5" for="horarios">Nivel de riesgo fisico (alto, medio, bajo)*:<br>
+                                <em><small>*(nivel de riesgo al que esta expuesto en el trabajo)</small></em>
+                            </label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="horarios" value="">
+                            </div>
+                        </div>
+                        <br><hr><br>
+                        <center><h4>Autorizacion</h4></center>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4">
+                                Acepto que la informacion proporcionada en este formulario es autentica.&nbsp&nbsp&nbsp&nbsp
+                                <input type="checkbox" name="aceptar" value="Acepta">
+                            </div>
+                            <label class="control-label col-sm-2" for="fecha">Fecha de solicitud</label>
+                            <div class="col-sm-2">
+                                <input type="date" class="form-control" name="fecha" value="">
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="form-group">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="nombre" value="">
+                                <center><label for="nombre">Nombre</label></center>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" name="puesto" value="">
+                                <center><label for="puesto">Puesto</label></center>
+                            </div>
+                        </div>
+                        <br><br><br><br><br>
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-2">
+                            <input type="submit" class="btn btn-success form-control" name="enviar" value="Enviar">
+                        </div>
+                        
+                        <br><br><br><br><br>
+                    </form>
+                </div>
+            </div>      
+        </div>
+    </body>
+</html>
